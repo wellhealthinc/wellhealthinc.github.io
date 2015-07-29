@@ -137,7 +137,7 @@ var appMaster = {
     },
     placeHold: function(){
         // run Placeholdem on all elements with placeholders
-        Placeholdem(document.querySelectorAll('[placeholder]'));
+        //Placeholdem(document.querySelectorAll('[placeholder]'));
     }
 
 }; // AppMaster
