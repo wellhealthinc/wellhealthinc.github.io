@@ -593,15 +593,18 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-8 col-sm-8 ">
-                                <form role="form">
+                                <form role="form" name="sentMessage" id="contactForm" novalidate>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your name">
+                                        <input type="text" class="form-control" placeholder="Your name" id="name" required data-validation-required-message="Please enter your name.">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your email">
+                                        <input type="email" class="form-control" placeholder="Your email" id="email" required data-validation-required-message="Please enter your email address.">
                                     </div>
                                     <div class="form-group">
-                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                                        <input type="tel" class="form-control" placeholder="Your phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Your message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                 </form>
@@ -669,6 +672,9 @@
     <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
+        <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <script>
         $(document).ready(function() {
