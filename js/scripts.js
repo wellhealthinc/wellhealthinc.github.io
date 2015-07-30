@@ -36,7 +36,7 @@ var appMaster = {
             dots: true,
             arrows: false,
             autoplay: true,
-            autoplaySpeed: 5000
+            autoplaySpeed: 15000
         });
     },
 
