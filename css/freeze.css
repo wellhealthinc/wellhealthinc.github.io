@@ -566,9 +566,9 @@ section::after {
   color: #ffffff;
 }
 .btn.btn-demo:hover {
-  color: #ffffff;
-  background: #3FC3DB;
-  border-color: #3FC3DB;
+  color: #F09800;
+  background: #ffffff;
+  border-color: #F09800;
 }
 .btn.btn-default {
   border: none;
@@ -1050,9 +1050,9 @@ footer .rights a {
   border-color: #ffffff;
 }
 .btn.btn-primary.inverse:hover {
-  color: #ffffff;
-  background: #3FC3DB;
-  border-color: #3FC3DB;
+  color: #3FC3DB;
+  background: #ffffff;
+  border-color: #ffffff;
 }
 .btn.btn-default {
   background: #ffffff;
