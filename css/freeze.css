@@ -560,6 +560,16 @@ section::after {
 .btn.btn-primary:hover {
   color: #ffffff;
 }
+.btn.btn-demo {
+  border: 2px solid #ffffff;
+  background: #F09800;
+  color: #ffffff;
+}
+.btn.btn-demo:hover {
+  color: #ffffff;
+  background: #66cdcc;
+  border-color: #66cdcc;
+}
 .btn.btn-default {
   border: none;
   background: #ffffff;
