@@ -509,6 +509,8 @@ section::after {
   pointer-events: none;
   overflow: hidden;
 }
+
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
@@ -798,43 +800,16 @@ header .navbar-default ul.navbar-nav li a {
   color: #00AFEC;
   background: none;
 }
+
 header .navbar-default ul.navbar-nav li a.getApp {
-  color: #3c79b4;
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #e0e0e0));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#e0e0e0, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+  border: 2px solid #ffffff;
+  background: #F09800;
+  color: #ffffff;
 }
 header .navbar-default ul.navbar-nav li a.getApp:hover {
-  color: #4081bf;
+  color: #F09800;
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
+  border-color: #F09800;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
