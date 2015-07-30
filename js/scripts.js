@@ -123,8 +123,9 @@ var appMaster = {
         
     },
 
+/*
     scrollMenu: function(){
-        var num = 50; //number of pixels before modifying styles
+        var num = 0; //number of pixels before modifying styles
 
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > num) {
@@ -135,6 +136,7 @@ var appMaster = {
             }
         });
     },
+    */
     placeHold: function(){
         // run Placeholdem on all elements with placeholders
         //Placeholdem(document.querySelectorAll('[placeholder]'));
@@ -149,13 +151,13 @@ $(document).ready(function() {
 
     appMaster.reviewsCarousel();
 
-    appMaster.screensCarousel();
+ //   appMaster.screensCarousel();
 
     appMaster.animateScript();
 
     appMaster.revSlider();
 
-    appMaster.scrollMenu();
+//    appMaster.scrollMenu();
 
     appMaster.placeHold();
 

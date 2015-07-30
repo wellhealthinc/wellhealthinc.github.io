@@ -42,18 +42,14 @@ h6,
   color: #666666;
 }
 header .navbar-default {
-  background: none;
-  border: none;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+ background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 0;
 }
 header .navbar-default ul.navbar-nav {
-  padding-top: 55px;
+  padding-top: 15px;
 }
 header .navbar-default ul.navbar-nav li a {
   text-transform: capitalize;
@@ -80,7 +76,7 @@ header .navbar-default ul.navbar-nav li a:after {
   -ms-border-radius: 5em;
   -o-border-radius: 5em;
   border-radius: 5em;
-  color: #ffffff;
+  color: #00AFEC;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -95,7 +91,7 @@ header .navbar-default ul.navbar-nav li a:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default ul.navbar-nav li a:hover:after {
-  background: #ffffff;
+  background: #00AFEC;
 }
 header .navbar-default ul.navbar-nav li a.getApp {
   -webkit-border-radius: 5em;
@@ -131,7 +127,14 @@ header .navbar-default.scrolled {
 header .navbar-default.scrolled .navbar-brand {
   padding: 15px 20px;
 }
+header .navbar-default .navbar-brand {
+  padding: 15px 20px;
+}
 header .navbar-default.scrolled .navbar-brand img {
+  width: auto;
+  max-height: 33px;
+}
+header .navbar-default .navbar-brand img {
   width: auto;
   max-height: 33px;
 }
@@ -645,8 +648,8 @@ form textarea.form-control {
     margin-top: 0px;
     margin-right: 0px;
     background: none;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #00AFEC;
+    color: #00AFEC;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
     -ms-border-radius: 5em;
@@ -683,12 +686,30 @@ form textarea.form-control {
     padding-top: 0;
     margin: 0;
   }
+
+    header .navbar-default ul.navbar-nav {
+    padding-top: 0;
+    margin: 0;
+  }
   header .navbar-default.scrolled .navbar-toggle {
     margin-top: 11px;
     margin-right: 20px;
     background: none;
     border: 2px solid #ffffff;
     color: #ffffff;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
+  }
+
+    header .navbar-default .navbar-toggle {
+    margin-top: 11px;
+    margin-right: 20px;
+    background: none;
+    border: 2px solid #00AFEC;
+    color: #00AFEC;
     -webkit-border-radius: 5em;
     -moz-border-radius: 5em;
     -ms-border-radius: 5em;
@@ -774,7 +795,7 @@ header {
   /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a {
-  color: #ffffff;
+  color: #00AFEC;
   background: none;
 }
 header .navbar-default ul.navbar-nav li a.getApp {
@@ -821,7 +842,7 @@ header .navbar-default ul.navbar-nav li a.getApp:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default ul.navbar-nav li a:hover {
-  color: #ffffff;
+  color: #00AFEC;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -840,6 +861,17 @@ header .navbar-default.scrolled ul.navbar-nav li a:hover {
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
   background: #00AFEC;
 }
+
+header .navbar-default.scrolled ul.navbar-nav li a {
+  color: #00AFEC;
+}
+header .navbar-default.scrolled ul.navbar-nav li a:hover {
+  color: #00AFEC;
+}
+header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
+  background: #00AFEC;
+}
+
 header .navbar-default.scrolled .navbar-brand {
   background: #00AFEC;
 }
@@ -1087,7 +1119,7 @@ form .form-control:focus {
   }
   header .navbar-default ul.navbar-nav li a {
     color: #ffffff;
-    border-bottom: 1px solid #376fa4;
+    border-bottom: 1px solid #FFF;
   }
   header .navbar-default ul.navbar-nav li a.getApp {
     color: #ffffff;
