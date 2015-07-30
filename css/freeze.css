@@ -567,8 +567,8 @@ section::after {
 }
 .btn.btn-demo:hover {
   color: #ffffff;
-  background: #66cdcc;
-  border-color: #66cdcc;
+  background: #00afec;
+  border-color: #00afec;
 }
 .btn.btn-default {
   border: none;
@@ -756,21 +756,21 @@ form textarea.form-control {
   }
 }
 header {
-  background: #66cdcc;
+  background: #00afec;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -moz-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #336799));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #00afec), color-stop(100%, #336799));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -webkit-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -o-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -ms-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* IE10+ */
-  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#336799, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00afec, endColorstr=#336799, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a {
@@ -829,57 +829,57 @@ header .navbar-default ul.navbar-nav li a:hover {
   transition: all 0.25s ease-in-out;
 }
 header .navbar-default.scrolled {
-  border-bottom: 3px solid #336799;
+  border-bottom: 3px solid #00afec;
 }
 header .navbar-default.scrolled ul.navbar-nav li a {
-  color: #336799;
+  color: #00afec;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover {
-  color: #336799;
+  color: #00afec;
 }
 header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
-  background: #336799;
+  background: #00afec;
 }
 header .navbar-default.scrolled .navbar-brand {
-  background: #336799;
+  background: #00afec;
 }
 section .section-heading .divider:after {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#about .about-item i.fa {
-  border: 2px solid #66cdcc;
-  color: #66cdcc;
+  border: 2px solid #00afec;
+  color: #00afec;
 }
 section#about .about-item:hover i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #00afec;
 }
 section#about .about-item:hover h3 {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#features {
   background: #f6f6f6;
 }
 section#features header h1:after {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#features .media i.fa {
-  border: 2px solid #66cdcc;
-  color: #66cdcc;
+  border: 2px solid #00afec;
+  color: #00afec;
 }
 section#features .media:hover i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #00afec;
 }
 section#features .media:hover h3 {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#features .media.active i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #00afec;
 }
 section#features .media.active .media-heading {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#reviews {
   background: url("../img/freeze/bk-freeze.jpg");
@@ -897,10 +897,10 @@ section#reviews .review-filtering .review .review-comment {
   background: #ffffff;
 }
 section#reviews .review-filtering .review .review-comment h3 {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#reviews .review-filtering .review .review-comment p span i {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#reviews .review-filtering .review .review-comment:after {
   border-right-color: #ffffff;
@@ -910,10 +910,10 @@ section#reviews .review-filtering .slick-dots li button {
   border: 2px solid #ffffff;
 }
 section#reviews .review-filtering .slick-dots li.slick-active button {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#screens header h1:after {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#screens .slider div img {
   border: 2px solid #e5e5e5;
@@ -925,7 +925,7 @@ section#screens .slider .slick-dots li button {
   background: #999999;
 }
 section#screens .slider .slick-dots li.slick-active button {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#screens .filter a {
   border: 2px solid #cccccc;
@@ -933,20 +933,20 @@ section#screens .filter a {
 }
 section#screens .filter a:hover {
   color: #ffffff;
-  background: #66cdcc;
-  border-color: #66cdcc;
+  background: #00afec;
+  border-color: #00afec;
 }
 section#screens .filter a.active {
   color: #ffffff;
-  background: #66cdcc;
-  border-color: #66cdcc;
+  background: #00afec;
+  border-color: #00afec;
 }
 /* demo video Section */
 section#demo {
   background: #f6f6f6;
 }
 section#demo header h1:after {
-  background: #66cdcc;
+  background: #00afec;
 }
 /* Get app Section */
 section#getApp {
@@ -973,43 +973,43 @@ section#getApp .platforms .media:hover {
 }
 section#getApp .platforms .media:hover a i,
 section#getApp .platforms .media:hover a div.media-body {
-  color: #66cdcc;
+  color: #00afec;
 }
 /* support section */
 section#support header h1:after {
-  background: #66cdcc;
+  background: #00afec;
 }
 section#support .media i.fa {
-  border: 2px solid #66cdcc;
-  color: #66cdcc;
+  border: 2px solid #00afec;
+  color: #00afec;
 }
 section#support .media a {
-  color: #66cdcc;
+  color: #00afec;
 }
 section#support .media:hover i.fa {
   color: #ffffff;
-  background: #66cdcc;
+  background: #00afec;
 }
 section#support .media:hover h3 {
-  color: #66cdcc;
+  color: #00afec;
 }
 /* footer section */
 footer {
-  background: #66cdcc;
+  background: #00afec;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -moz-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #66cdcc), color-stop(100%, #336799));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #00afec), color-stop(100%, #336799));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -webkit-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -o-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: -ms-linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* IE10+ */
-  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+  background: linear-gradient(-45deg, #00afec 0%, #336799 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66cdcc, endColorstr=#336799, GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00afec, endColorstr=#336799, GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
 footer .social a {
@@ -1022,7 +1022,7 @@ footer .social a:hover {
   background: #ffffff;
 }
 footer .social a:hover i {
-  color: #66cdcc;
+  color: #00afec;
 }
 footer .rights {
   color: #ffffff;
@@ -1037,13 +1037,13 @@ footer .rights a {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .btn.btn-primary {
-  color: #66cdcc;
-  border-color: #66cdcc;
+  color: #00afec;
+  border-color: #00afec;
 }
 .btn.btn-primary:hover {
   color: #ffffff;
-  background: #66cdcc;
-  border-color: #66cdcc;
+  background: #00afec;
+  border-color: #00afec;
 }
 .btn.btn-primary.inverse {
   color: #ffffff;
@@ -1051,8 +1051,8 @@ footer .rights a {
 }
 .btn.btn-primary.inverse:hover {
   color: #ffffff;
-  background: #66cdcc;
-  border-color: #66cdcc;
+  background: #00afec;
+  border-color: #00afec;
 }
 .btn.btn-default {
   background: #ffffff;
@@ -1077,7 +1077,7 @@ footer .rights a {
   color: #336799;
 }
 form .form-control:focus {
-  border-color: #66cdcc;
+  border-color: #00afec;
   color: #999999;
 }
 @media screen and (max-width: 640px) {
@@ -1096,7 +1096,7 @@ form .form-control:focus {
     display: none;
   }
   header .navbar-default ul.navbar-nav li a:hover {
-    color: #66cdcc;
+    color: #00afec;
   }
   header .navbar-default .navbar-collapse {
     background: #336799;
@@ -1108,7 +1108,7 @@ form .form-control:focus {
     color: #ffffff;
   }
   header .navbar-default.scrolled ul.navbar-nav li a:hover {
-    color: #66cdcc;
+    color: #00afec;
   }
 }
 .pre-loader {
