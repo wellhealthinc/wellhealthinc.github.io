@@ -249,6 +249,45 @@ section#features .media.feature:first-child {
 section#features img {
   margin: 0 auto 20px;
 }
+
+section#howitworks .media > .pull-right {
+  margin-left: 20px;
+}
+section#howitworks .media i.fa {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 20px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 2.6em;
+  text-align: center;
+}
+section#howitworks .media .media-heading {
+  padding-top: 10px;
+  font-weight: 300;
+}
+section#howitworks .media .media-body {
+  color: #999999;
+}
+section#howitworks .media.media-left .media-body {
+  text-align: right;
+}
+section#howitworks .media.feature {
+  margin-top: 25px;
+}
+section#howitworks .media.feature:first-child {
+  margin-top: 0;
+}
+section#howitworks img {
+  margin: 0 auto 20px;
+}
+
 section#reviews {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -881,6 +920,11 @@ section#about .about-item:hover h3 {
 section#features {
   background: #f6f6f6;
 }
+
+section#howitworks {
+  background: #f6f6f6;
+}
+
 section#features header h1:after {
   background: #3FC3DB;
 }
