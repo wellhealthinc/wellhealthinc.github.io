@@ -542,9 +542,23 @@ section::after {
 }
 .tp-caption.large_white_light {
   color: #ffffff;
-  font-size: 65px;
+  font-size: 42px;
   font-weight: 400;
   font-weight: 300;
+}
+
+.tp-caption.large_white_light_mobile {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 400;
+  font-weight: 300;
+}
+
+.tp-caption.small_white_light {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  
 }
 .btn {
   -webkit-border-radius: 3em;
@@ -1098,6 +1112,7 @@ form .form-control:focus {
   }
   header .navbar-default ul.navbar-nav li a.getApp {
     color: #ffffff;
+    
   }
   header .navbar-default ul.navbar-nav li a:after {
     display: none;
