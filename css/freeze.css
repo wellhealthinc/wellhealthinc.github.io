@@ -625,8 +625,8 @@ section::after {
 }
 .btn.btn-demo {
   border: 2px solid #ffffff;
-  background: #F09800;
-  color: #ffffff;
+  background: #FFF;
+  color: #3FC3DB;
 }
 .btn.btn-demo:hover {
   color: #F09800;
