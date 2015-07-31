@@ -274,9 +274,14 @@ section#howitworks .media .media-heading {
 }
 section#howitworks .media .media-body {
   color: #999999;
+  
+  font-size: 32px;
+font-weight: 300;
 }
 section#howitworks .media.media-left .media-body {
   text-align: right;
+  font-size: 32px;
+font-weight: 300;
 }
 section#howitworks .media.feature {
   margin-top: 25px;
