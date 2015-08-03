@@ -422,6 +422,79 @@ section#screens .slick-next:before {
 section#screens .filter {
   text-align: center;
 }
+
+.vendor {
+    background:#FFF;
+    padding:30px 0
+}
+
+.vendor-content {
+    max-width:1190px;
+    color:#fff;
+    text-align:center
+}
+
+@media (max-width:50em) {
+.vendor-content {
+    padding:0 10px
+}
+}
+
+.vendor-content h3 {
+    font-size:1.75em;
+    font-weight:600;
+    padding-bottom:35px;
+    display:block
+}
+
+.vendor-content p {
+    display:inline-block
+}
+
+.vendor-content .image {
+    display:inline-block;
+    margin-right:15px;
+    height:50px;
+    width:150px;
+    background-image:url('../img/freeze/vendors.png');
+    background-size:cover;
+    background-repeat:no-repeat
+}
+
+.vendor-content .image.epic {
+    background-position:0 -248px
+}
+
+.vendor-content .image.cerner {
+    background-position:0 5px
+}
+
+.vendor-content .image.greenway {
+    background-position:0 -182px
+}
+
+.vendor-content .image.allscripts {
+    background-position:0 -57px
+}
+
+.vendor-content .image.nextgen {
+    background-position:0 -119px
+}
+
+.vendor-content .image.athena {
+    background-position:0 -320px
+}
+
+.vendor-content .image.meditech {
+    background-position:0 -403px
+}
+
+.vendor-content .dot {
+    width:5px;
+    height:5px;
+    vertical-align:middle;
+    margin:0 10px
+}
 section#screens .filter a {
   display: inline-block;
   padding: 7px 20px;
@@ -527,8 +600,9 @@ footer .social a i {
   width: 1em;
 }
 footer .rights {
-  margin-top: 30px;
+  margin-top: 20px;
 }
+
 footer .rights a {
   text-decoration: underline;
   -webkit-transition: all 0.25s ease-in-out;
@@ -536,10 +610,19 @@ footer .rights a {
   -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  font-weight: bold;
+  font-weight: none;
+  font-size: 20px
 }
 footer .rights a:hover {
+    -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   text-decoration: none;
+  
+  font-weight: 600;
+
 }
 section {
   position: relative;
@@ -701,6 +784,9 @@ form textarea.form-control {
   .contact-details {
     margin-top: 20px;
   }
+
+  footer .nav
+
   header .navbar-default {
     padding: 20px;
   }
@@ -882,6 +968,7 @@ header .navbar-default ul.navbar-nav li a:hover {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+
 header .navbar-default.scrolled {
   border-bottom: 3px solid #00AFEC;
 }
@@ -1065,6 +1152,8 @@ section#support .media:hover h3 {
 }
 /* footer section */
 footer {
+
+
   background: #3FC3DB;
   /* Old browsers */
   background: -moz-linear-gradient(-45deg, #3FC3DB 0%, #00AFEC 100%);
@@ -1102,6 +1191,25 @@ footer .rights a {
   font-weight: 300;
   text-decoration: none;
 }
+
+footer .nav {
+  align:center;
+}
+
+footer .nav li a:hover {
+  color: #00AFEC;
+  text-align: center;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+
+
+
 .navbar-toggle {
   background-color: #CCC;
   border: 1px solid rgba(0, 0, 0, 0);
