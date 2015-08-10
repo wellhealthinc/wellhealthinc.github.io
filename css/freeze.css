@@ -720,7 +720,10 @@ section::after {
    border: 2px solid #ffffff;
    background: #F09800;
    color: #ffffff;
-
+   border-radius: 0.5em;
+   padding: 30px 25px;
+   font-size: 20px;
+    width: 40%;
    
    margin-top: 15px;
 }
@@ -728,13 +731,17 @@ section::after {
   color: #F09800;
   background: #ffffff;
   border-color: #F09800;
+
 }
 .btn.btn-demo-inverse {
    border: 2px solid #3FC3DB;
    background: #3FC3DB;
    color: #ffffff;
-   
-   margin-top: 0px;
+   border-radius: 0.5em;
+   margin-top: 15px;
+   padding: 30px 25px;
+   font-size: 20px;
+   width: 40%;
 }
 .btn.btn-demo-inverse:hover {
   color: #3FC3DB;
