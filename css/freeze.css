@@ -247,7 +247,7 @@ section#features .media.feature:first-child {
   margin-top: 0;
 }
 section#features img {
-  margin: 0 auto 20px;
+  margin: 20px auto 20px;
 }
 
 section#howitworks .media > .pull-right {
@@ -300,7 +300,7 @@ section#reviews {
   background-size: cover;
 }
 section#reviews .review-filtering {
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
 }
 section#reviews .review-filtering .review .review-person {
   width: 100%;
@@ -530,7 +530,7 @@ section#getApp {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 70px 0;
+  padding: 10px 0 60px 0;
 }
 section#getApp .platforms {
   margin: 5px auto 120px auto;
@@ -706,15 +706,40 @@ section::after {
 .btn.btn-primary:hover {
   color: #ffffff;
 }
-.btn.btn-demo {
+.btn.btn-started {
   border: 2px solid #ffffff;
   background: #FFF;
   color: #3FC3DB;
+}
+.btn.btn-started:hover {
+  color: #F09800;
+  background: #ffffff;
+  border-color: #F09800;
+}
+.btn.btn-demo {
+   border: 2px solid #ffffff;
+   background: #F09800;
+   color: #ffffff;
+
+   
+   margin-top: 15px;
 }
 .btn.btn-demo:hover {
   color: #F09800;
   background: #ffffff;
   border-color: #F09800;
+}
+.btn.btn-demo-inverse {
+   border: 2px solid #3FC3DB;
+   background: #3FC3DB;
+   color: #ffffff;
+   
+   margin-top: 0px;
+}
+.btn.btn-demo-inverse:hover {
+  color: #3FC3DB;
+  background: #ffffff;
+  border-color: #3FC3DB;
 }
 .btn.btn-default {
   border: none;
@@ -749,18 +774,18 @@ form .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 5em;
-  -moz-border-radius: 5em;
-  -ms-border-radius: 5em;
-  -o-border-radius: 5em;
-  border-radius: 5em;
+ 
   height: 40px;
   line-height: 40px;
-  padding: 20px;
-  color: #cfcfcf;
+  color: #404040;
   border: 2px solid #cccccc;
   font-weight: 300;
+  font-size: 18px;
+  padding: 0px 8px;
 }
+
+
+
 form textarea.form-control {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -769,6 +794,18 @@ form textarea.form-control {
   border-radius: 20px;
   height: auto;
   line-height: normal;
+  margin-top: 30px;
+}
+
+
+
+form .control-group
+{
+      -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    border-radius: 5em;
 }
 @media screen and (max-width: 640px) {
   .logo {
@@ -1228,9 +1265,9 @@ footer .nav li a:hover {
   border-color: #ffffff;
 }
 .btn.btn-primary.inverse:hover {
-  color: #3FC3DB;
+  color: #F09800;
   background: #ffffff;
-  border-color: #ffffff;
+  border-color: #F09800;
 }
 .btn.btn-default {
   background: #ffffff;
@@ -1256,7 +1293,7 @@ footer .nav li a:hover {
 }
 form .form-control:focus {
   border-color: #3FC3DB;
-  color: #999999;
+  color: #404040;
 }
 @media screen and (max-width: 640px) {
   header .navbar-default .navbar-toggle:hover,
@@ -1293,3 +1330,5 @@ form .form-control:focus {
 .pre-loader {
   background: #00AFEC;
 }
+
+
