@@ -23,6 +23,7 @@ body {
 a {
   font-family: 'Lato', Arial;
   -webkit-font-smoothing: antialiased;
+  font-size:14px;
 }
 div.content {
   overflow: hidden;
@@ -721,11 +722,12 @@ section::after {
    background: #F09800;
    color: #ffffff;
    border-radius: 0.5em;
-   padding: 30px 25px;
+   padding: 20px 25px;
    font-size: 20px;
     width: 40%;
    
    margin-top: 15px;
+
 }
 .btn.btn-demo:hover {
   color: #F09800;
@@ -739,7 +741,7 @@ section::after {
    color: #ffffff;
    border-radius: 0.5em;
    margin-top: 15px;
-   padding: 30px 25px;
+   padding: 20px 25px;
    font-size: 20px;
    width: 40%;
 }
@@ -777,6 +779,8 @@ section::after {
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+
+
 form .form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
