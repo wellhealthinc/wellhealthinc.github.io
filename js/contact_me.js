@@ -30,7 +30,8 @@ $(function() {
           'X-Parse-REST-API-Key': 'eOPBrESbJ8MGSYGWskcFQPcdtuuwg9y76esoOaWK'
         },
         data: {
-          providerName: $('input#firstname').val() + '|' + $('input#lastname').val(),
+          providerFirstName: $('input#firstname').val(),
+          providerLastName: $('input#lastname').val(),
           providerEmailAddress: $('input#email').val()
         },
         dataType: 'json',
