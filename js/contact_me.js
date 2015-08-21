@@ -36,7 +36,8 @@ $(function() {
         },
         dataType: 'json',
         success: function (json) {
-          alert("Success!", json);
+          location.href = "https://calendly.com/well/20min/"
+          
 
         },
         error: function (xhr, status, errorThrown) {
