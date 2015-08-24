@@ -13,9 +13,9 @@ $(function() {
 
   while (iDevices.length) {
     if (navigator.platform === iDevices.pop()){
-        location.href = "http://wellapp.com/?IOS"
+        console.log("iOS"); 
     }else{
-        location.href = "http://wellapp.com/?NOTIOS"
+        console.log("Not iOS");
     }
   }
 
