@@ -1,5 +1,27 @@
 $(function() {
 
+  
+
+  var iDevices = [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ];
+
+  while (iDevices.length) {
+    if (navigator.platform === iDevices.pop()){
+     console.log("iOS"); 
+    }
+  }
+
+  console.log("Not iOS");
+
+
+
+
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
