@@ -4,13 +4,6 @@ $(function() {
 
 
 
-  if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-        location.href = "http://google.com"
-  }else{
-    location.href = "about:blank"  
-  }
-
-  
 
   
 
