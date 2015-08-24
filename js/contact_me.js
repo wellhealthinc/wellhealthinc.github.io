@@ -13,11 +13,13 @@ $(function() {
 
   while (iDevices.length) {
     if (navigator.platform === iDevices.pop()){
-     location.href = "http://wellapp.com/?IOS"
+        location.href = "http://wellapp.com/?IOS"
+    }else{
+        location.href = "http://wellapp.com/?NOTIOS"
     }
   }
 
-  location.href = "http://wellapp.com/?NOTIOS"
+  
 
 
 
