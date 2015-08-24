@@ -2,22 +2,15 @@ $(function() {
 
   
 
-  var iDevices = [
-    'iPad Simulator',
-    'iPhone Simulator',
-    'iPod Simulator',
-    'iPad',
-    'iPhone',
-    'iPod'
-  ];
 
-  while (iDevices.length) {
-    if (navigator.platform === iDevices.pop()){
-        console.log("iOS"); 
-    }else{
-        console.log("Not iOS");
-    }
+
+  if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+        location.href = "http://google.com"
+  }else{
+    location.href = "about:blank"  
   }
+
+  
 
   
 
