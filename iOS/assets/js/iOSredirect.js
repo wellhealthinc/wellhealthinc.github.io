@@ -14,7 +14,7 @@ $(function() {
 
 
     /*
-    https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv
+    https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv 
 	*/
 
 	
