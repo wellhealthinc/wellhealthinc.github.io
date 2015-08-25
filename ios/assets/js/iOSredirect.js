@@ -35,7 +35,16 @@ $(function() {
     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
         console.log('iOS');
         $("#cover").fadeOut(200);
-		var iOS = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
+		//var iOS = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
+		var iOS = "http://google.com";        
+		var link = document.getElementById("typeform");
+
+    	window.open(
+      		link.href,
+      	'_blank'
+    	);
+    	link.setAttribute('href', iOS);
+
     }else if (window.mobilecheck){
         console.log('Mobile, not iOS');
     	location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";        
