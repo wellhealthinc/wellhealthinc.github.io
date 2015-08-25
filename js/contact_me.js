@@ -1,14 +1,5 @@
 $(function() {
 
-  
-
-
-
-
-  
-
-
-
 
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
