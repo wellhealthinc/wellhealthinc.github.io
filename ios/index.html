@@ -43,10 +43,10 @@
 					<br><br>
 					<h2 style="color:#FFF;"><b>Don't Waste Time!</b></h2>
 					<h2 class="subtitle">Zero Paperwork. <br> Super Fast Scheduling. <br> Appointment Reminders. <br> Simple Billing. </h2>
-					<a href="http://google.com" ><button id="btnIOS" style="border: 2px solid #ffffff;background:#F09800;color: #ffffff;border-radius: 0.5em;padding: 20px 25px;font-size: 24px;width: 90%;margin-top: 15px;"><b>Download Our Free App</b></button></a>
+					<button onclick="goForth()" id="btnIOS" style="border: 2px solid #ffffff;background:#F09800;color: #ffffff;border-radius: 0.5em;padding: 20px 25px;font-size: 24px;width: 90%;margin-top: 15px;"><b>Download Our Free App</b></button>
 					<div>
 					
-					<a id="typeform" href="https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv"><button id="btnNO" class="btn sharp">No thanks, I have time to kill >></a></button>
+					<button onclick="goForth()" id="btnNO" class="btn sharp">No thanks, I have time to kill >></button>
 						
 					</div>
 
@@ -56,6 +56,27 @@
 			
 		</div>
 	</div>
+    <script type="text/javascript">
+function goForth() {
+      function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+    }
+        var varCFN = getURLParameter('cfn');
+    var	varCFNP = "cfn=" + varCFN;
+    var varCLN = getURLParameter('cln');
+    var	varCLNP = "cln=" + varCLN;
+    var varPID = getURLParameter('pid');
+    var	varPIDP = "pid=" + varPID;
+    var varCID = getURLParameter('cid');
+    var	varCIDP = "cid=" + varCID;
+    var varPN = getURLParameter('pn');
+    var	varPNP = "pn=" + varPN;
+    var varFAID = getURLParameter('faid');
+    var	varFAIDP = "faid=" + varFAID;
+    location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";
+            
+};
+	</script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.countdown.min.js"></script>
