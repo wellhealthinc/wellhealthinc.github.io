@@ -73,7 +73,15 @@ function goForth() {
     var	varPNP = "pn=" + varPN;
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
-    location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";
+    var varTF = getURLParameter('tf');
+    var varTFP = "tf=" + varTF;
+
+    
+    if (varTF !="" && varFT !=null){
+    location.href = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";   
+    }else{
+    location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";	
+    }     
             
 };
 	</script>
