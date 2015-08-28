@@ -61,7 +61,7 @@ function goForth() {
       function getURLParameter(name) {
         return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
     }
-        var varCFN = getURLParameter('cfn');
+    var varCFN = getURLParameter('cfn');
     var	varCFNP = "cfn=" + varCFN;
     var varCLN = getURLParameter('cln');
     var	varCLNP = "cln=" + varCLN;
@@ -75,9 +75,10 @@ function goForth() {
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
     var varTFP = "tf=" + varTF;
+    
 
     
-    if (varTF !="" && varFT !=null){
+    if (varTF !="" && varTF !=null){
     location.href = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";   
     }else{
     location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";	

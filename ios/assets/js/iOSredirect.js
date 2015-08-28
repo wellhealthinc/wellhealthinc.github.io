@@ -39,14 +39,17 @@ $(function() {
         $("#cover").fadeOut(200);
         if (varTF !="" && varFT !=null){
             var iOS = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
+            
         }else{
             var iOS = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
+            
         }
 		
 		
     }else if (window.mobilecheck){
         console.log('Mobile, not iOS');
-        if (varTF !="" && varFT !=null){
+        
+        if (varTF !="" && varTF !=null){
             location.href = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
         }else{
             location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
@@ -55,7 +58,8 @@ $(function() {
 
     }else{
     	console.log('Not Mobile, Not iOS');
-        if (varTF !="" && varFT !=null){
+        
+        if (varTF !="" && varTF !=null){
             location.href = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=2";
         }else{
             location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=2";
