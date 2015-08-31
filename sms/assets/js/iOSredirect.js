@@ -32,13 +32,13 @@ $(function() {
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
-    var varTFP = "tf=" + varTF;
+
 
     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
         console.log('iOS');
         $("#cover").fadeOut(200);
-        if (varTF !="" && varFT !=null){
-            var iOS = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
+        if (varTF !="" && varTF !=null){
+            var iOS = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        
             
         }else{
             var iOS = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";        

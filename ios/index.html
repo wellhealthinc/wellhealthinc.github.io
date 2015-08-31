@@ -74,12 +74,12 @@ function goForth() {
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
-    var varTFP = "tf=" + varTF;
-    
 
     
+    console.log(varTF);
+    
     if (varTF !="" && varTF !=null){
-    location.href = "https://wellhealth.typeform.com/to/" + varTFP + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";   
+    location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";   
     }else{
     location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=1";	
     }     
