@@ -43,7 +43,7 @@
 					<br><br>
 					<h2 style="color:#FFF;"><b>Don't Waste Time!</b></h2>
 					<h2 class="subtitle">Zero Paperwork. <br> Super Fast Scheduling. <br> Appointment Reminders. <br> Simple Billing. </h2>
-					<button onclick="goForth()" id="btnIOS" style="border: 2px solid #ffffff;background:#F09800;color: #ffffff;border-radius: 0.5em;padding: 20px 25px;font-size: 24px;width: 90%;margin-top: 15px;"><b>Download Our Free App</b></button>
+					<a href="https://itunes.apple.com/us/app/id1035086747"><button id="btnIOS" style="border: 2px solid #ffffff;background:#F09800;color: #ffffff;border-radius: 0.5em;padding: 20px 25px;font-size: 24px;width: 90%;margin-top: 15px;"><b>Download Our Free App</b></button></a>
 					<div>
 					
 					<button onclick="goForth()" id="btnNO" class="btn sharp">No thanks, I have time to kill >></button>
@@ -74,16 +74,15 @@ function goForth() {
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
-    var varOS = getURLParameter('os');
-    var varOSP = "os=" + varOS;
+
 
     
     console.log(varTF);
     
     if (varTF !="" && varTF !=null){
-    location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&" + varOSP;   
+    location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";   
     }else{
-    location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&" + varOSP;	
+    location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";	
     }     
             
 };
