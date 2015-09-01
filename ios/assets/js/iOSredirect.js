@@ -38,7 +38,7 @@ $(function() {
         console.log('iOS');
         $("#cover").fadeOut(200);
 	
-    }else if (varTF !="" && varTF !=null){
+    }else if (varTF ="" || varTF =null){
         console.log('Missing Typeform ID');
         location.href = "https://wellapp.com";         
     }else if (window.mobilecheck){
