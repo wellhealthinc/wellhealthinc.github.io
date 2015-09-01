@@ -17,7 +17,8 @@ $(function() {
     https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv 
 	*/
 
-	
+
+/* These parameters are passed through from the initial SMS/email link sent for client registration */	
 
     var varCFN = getURLParameter('cfn');
     var	varCFNP = "cfn=" + varCFN;
@@ -34,19 +35,18 @@ $(function() {
     var varTF = getURLParameter('tf');
     
 
+/*Checks for iOS, unhides the loading div to display splash screen for app download*/
     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
         console.log('iOS');
         $("#cover").fadeOut(200);
 	
-    }else if (varTF ="" || varTF =null){
+    }else if (varTF =="" || varTF ==null){ //if not iOS and missing tf param, redirect to wellapp.com
         console.log('Missing Typeform ID');
         location.href = "https://wellapp.com";         
-    }else if (window.mobilecheck){
+    }else if (window.mobilecheck){ //if not ios but mobile, redirect link
         console.log('Mobile, not iOS');
         location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
-        
-
-    }else{
+    }else{ //if not ios and not mobile, redirect link
     	console.log('Not Mobile, Not iOS');
         location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";
     }
