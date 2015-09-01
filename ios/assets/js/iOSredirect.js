@@ -42,7 +42,7 @@ $(function() {
 	
     }else if (varTF =="" || varTF ==null){ //if not iOS and missing tf param, redirect to wellapp.com
         console.log('Missing Typeform ID');
-        location.href = "https://wellapp.com";         
+        location.href = "http://wellapp.com";         
     }else if (window.mobilecheck){ //if not ios but mobile, redirect link
         console.log('Mobile, not iOS');
         location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
