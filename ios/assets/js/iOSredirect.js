@@ -37,27 +37,18 @@ $(function() {
     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
         console.log('iOS');
         $("#cover").fadeOut(200);
-		
-		
+	
+    }else if (varTF !="" && varTF !=null){
+        console.log('Missing Typeform ID');
+        location.href = "https://wellapp.com";         
     }else if (window.mobilecheck){
         console.log('Mobile, not iOS');
-        //$("#cover").fadeOut(200);
-        if (varTF !="" && varTF !=null){
-            location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
-        }else{
-            location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
-        }
-
+        location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";         
+        
 
     }else{
     	console.log('Not Mobile, Not iOS');
-        //$("#cover").fadeOut(200);
-        if (varTF !="" && varTF !=null){
-            location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";
-        }else{
-            location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";
-        }
-    	
+        location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";
     }
 
 
