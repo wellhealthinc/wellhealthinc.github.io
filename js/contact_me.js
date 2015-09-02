@@ -34,6 +34,8 @@ $(function() {
                             'input#firstname').val(),
                         providerLastName: $(
                             'input#lastname').val(),
+                        providerPhoneNumber: $(
+                            'input#cell').val(),
                         providerEmailAddress: $(
                             'input#email').val()
                     },
