@@ -14,13 +14,9 @@ $(function() {
 	}
 
 
-
-    /*
-    https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv 
-	*/
-
-
-/* These parameters are passed through from the initial SMS/email link sent for client registration */	
+/* These parameters are passed through from the initial SMS/email link sent for client registration 
+*   e.g. https://wellhealth.typeform.com/to/e7n17n?cfn=Joe&cln=Tischl%C3%A8r&pid=SFZzIjQUCl&cid=2hf7ohtltl&pn=Metro%20Imaging&faid=cxj1h2vypv 
+*/	
 
     var varCFN = getURLParameter('cfn');
     var	varCFNP = "cfn=" + varCFN;
@@ -35,10 +31,39 @@ $(function() {
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
+
+    var varLocationMobile =
+        "https://wellhealth.typeform.com/to/" + varTF + "?" 
+        + varCFNP 
+        + "&" + varCLNP 
+        + "&" + varPIDP 
+        + "&" + varCIDP 
+        + "&" + varPNP 
+        + "&" + varFAIDP 
+        + "&os=0"
+        ; 
     
-/*Modifies the button HTML if pass-thru*/
+    var varLocationWeb =
+        "https://wellhealth.typeform.com/to/" + varTF + "?" 
+        + varCFNP 
+        + "&" + varCLNP 
+        + "&" + varPIDP 
+        + "&" + varCIDP 
+        + "&" + varPNP 
+        + "&" + varFAIDP 
+        + "&os=0"
+        ;
+
+    var varLocationRedirect = "http://wellapp.com";
+    var varRedirect = false;
+
+/*TODO: Decide on redirect logic*/
+    
+/*Modifies the button HTML if not a redirect*/
 if (varPN!=""&&varPN!=null){
     document.getElementById("btnIOS").innerHTML = '<b>Download ' + varPN.toString() +'\'s Free App</b>';
+}else{
+    varRedirect = true;
 }
 
 /*Checks for iOS, unhides the loading div to display splash screen for app download*/
@@ -48,45 +73,25 @@ if (varPN!=""&&varPN!=null){
 	
     }else if (varTF =="" || varTF ==null){ //if not iOS and missing tf param, redirect to wellapp.com
         console.log('Missing Typeform ID');
-        location.href = "http://wellapp.com";         
+        location.href = varLocationRedirect;         
     }else if (isMobile()){ //if not ios but mobile, redirect link
         console.log('Mobile, not iOS');
-        alert('Mobile, not iOS');
-        //$("#cover").fadeOut(200);
-        // location.href = 
-        //     "https://wellhealth.typeform.com/to/" 
-        //     + varTF + "?" 
-        //     + varCFNP 
-        //     + "&" + varCLNP 
-        //     + "&" + varPIDP 
-        //     + "&" + varCIDP 
-        //     + "&" + varPNP 
-        //     + "&" + varFAIDP 
-        //     + "&os=0"
-        //     ;         
+        // alert('Mobile, not iOS');
+        // $("#cover").fadeOut(200);
+        location.href = varLocationMobile;        
     }else{ //if not ios and not mobile, redirect link
     	console.log('Not Mobile, Not iOS');
-        alert('Not Mobile, Not iOS');
+        // alert('Not Mobile, Not iOS');
         // $("#cover").fadeOut(200);
-        // location.href = 
-        //     "https://wellhealth.typeform.com/to/" 
-        //     + varTF + "?" 
-        //     + varCFNP 
-        //     + "&" + varCLNP 
-        //     + "&" + varPIDP 
-        //     + "&" + varCIDP 
-        //     + "&" + varPNP 
-        //     + "&" + varFAIDP 
-        //     + "&os=0"
-        // ;
+        location.href = varLocationWeb;
     }
 
     $("#btnNO").click(function(){        
         if (varTF !="" && varTF !=null){
-            location.href = "https://wellhealth.typeform.com/to/" + varTF + "?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";   
+            location.href = varLocationMobile;
         }else{
-            location.href = "https://wellhealth.typeform.com/to/e7n17n?" + varCFNP + "&" + varCLNP + "&" + varPIDP + "&" + varCIDP + "&" + varPNP + "&" + varFAIDP + "&os=0";   
-        } 
+            location.href = varLocationRedirect;   
+        }
     });
     
     
