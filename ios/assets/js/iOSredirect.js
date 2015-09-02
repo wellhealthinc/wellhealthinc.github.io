@@ -58,6 +58,7 @@ $(function() {
     var varRedirect = false;
 
 /*TODO: Decide on redirect logic*/
+/*TODO: Android: Modify btnIOS href to android app http://davidwalsh.name/detect-android */
     
 /*Modifies the button HTML if not a redirect*/
 if (varPN!=""&&varPN!=null){
