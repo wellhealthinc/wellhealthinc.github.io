@@ -92,8 +92,12 @@ $(function() {
                     url: 'https://api.parse.com/1/functions/registerProvider',
                     type: 'POST',
                     headers: {
-                        'X-Parse-Application-Id': 'nnFg5eYk5sVrncskpzpyfCMla8m9V8XdFA0wYb76',
-                        'X-Parse-REST-API-Key': '2FhkdeQzHrAlHHXGTfHAgCcpILzhv2wXIz7Q85K5'
+
+                        'X-Parse-Application-Id': 'MFv9KnsKigQT3xCzojePIduQmeA9xqfMscmPw3sj',
+                        'X-Parse-REST-API-Key': 'j8ruKWTtZlheswMTmG7RpIcyp2J3becNifjDTLZ4'
+
+/*                        'X-Parse-Application-Id': 'nnFg5eYk5sVrncskpzpyfCMla8m9V8XdFA0wYb76',
+                        'X-Parse-REST-API-Key': '2FhkdeQzHrAlHHXGTfHAgCcpILzhv2wXIz7Q85K5'*/
                     },
                     data: {
                         firstName: $(
