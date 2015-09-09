@@ -711,11 +711,24 @@ section::after {
   border: 2px solid #ffffff;
   background: #FFF;
   color: #3FC3DB;
+
 }
 .btn.btn-started:hover {
   color: #F09800;
   background: #ffffff;
   border-color: #F09800;
+
+}
+.btn.btn-started2 {
+  border: 2px solid #ffffff;
+  background: #FFF;
+  color: #FFF;
+  background-color:transparent;
+}
+.btn.btn-started2:hover {
+  color: #FFF;
+  background: #00AFEC;
+  border-color: #00AFEC;
 }
 .btn.btn-demo {
    border: 2px solid #ffffff;
@@ -726,7 +739,7 @@ section::after {
    font-size: 20px;
     width: 40%;
    
-   margin-top: 15px;
+   margin-top: 0px;
 
 }
 .btn.btn-demo:hover {
