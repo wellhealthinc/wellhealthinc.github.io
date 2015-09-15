@@ -26,8 +26,8 @@ $(function() {
                     url: 'https://api.parse.com/1/functions/sendProviderDemoEmail',
                     type: 'POST',
                     headers: {
-                        'X-Parse-Application-Id': 'WcNXULqtiPB7RRu2edl4UGsCS5ZFeguwobEi3PDg',
-                        'X-Parse-REST-API-Key': 'eOPBrESbJ8MGSYGWskcFQPcdtuuwg9y76esoOaWK'
+                        'X-Parse-Application-Id': 'J6ysfOx4FV45BbTarg25oXSlJJZG9fs9Kzjul6wM',
+                        'X-Parse-REST-API-Key': 'YrUKfK64SBchpZ0WytA3bl3fMYRrc0Xizt4qDcaL'
                     },
                     data: {
                         providerFirstName: $(
@@ -93,8 +93,8 @@ $(function() {
                     type: 'POST',
                     headers: {
 
-                        'X-Parse-Application-Id': 'MFv9KnsKigQT3xCzojePIduQmeA9xqfMscmPw3sj',
-                        'X-Parse-REST-API-Key': 'j8ruKWTtZlheswMTmG7RpIcyp2J3becNifjDTLZ4'
+                        'X-Parse-Application-Id': 'J6ysfOx4FV45BbTarg25oXSlJJZG9fs9Kzjul6wM',
+                        'X-Parse-REST-API-Key': 'YrUKfK64SBchpZ0WytA3bl3fMYRrc0Xizt4qDcaL'
 
 /*                        'X-Parse-Application-Id': 'nnFg5eYk5sVrncskpzpyfCMla8m9V8XdFA0wYb76',
                         'X-Parse-REST-API-Key': '2FhkdeQzHrAlHHXGTfHAgCcpILzhv2wXIz7Q85K5'*/
