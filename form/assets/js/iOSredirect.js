@@ -39,7 +39,7 @@ $(function() {
         + "&" + varOSP
         ;
     
-    if (varPN!=""&&varPN!=null){
+    if (varTF!=""&&varTF!=null){
         if (isMobile()){
             console.log('Mobile');
             location.href = varLocation; 
