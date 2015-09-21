@@ -39,18 +39,18 @@ $(function() {
         + "&" + varOSP
         ;
     
-    if (isMobile()){
-        console.log('Mobile');
-        location.href = varLocation; 
-    }else{
-        console.log('Not Mobile');
-        if (varPN!=""&&varPN!=null){
-            //document.getElementById("btnIOS").innerHTML = '<b>Download ' + varPN.toString() +'\'s Free App</b>';
+    if (varPN!=""&&varPN!=null){
+        if (isMobile()){
+            console.log('Mobile');
+            location.href = varLocation; 
+        }else{
+            console.log('Not Mobile');
             document.getElementById('typeform-full').src = varLocation;
-            $("#cover").fadeOut(200);
+            //$("#cover").fadeOut(200);
         }
+    }else{
+        location.href = "http://wellapp.com"
     }
-
     
 
 });
