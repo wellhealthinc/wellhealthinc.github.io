@@ -99,8 +99,8 @@ $(function() {
                     },
                     dataType: 'json',
                     success: function(json) {
-                        //location.href = "https://calendly.com/well/20min/";
-                        alert("Success!");
+                        location.href = "http://wellapp.com/demo";
+                        //alert("Success!");
                     },
                     error: function(xhr, status,
                         errorThrown) {
