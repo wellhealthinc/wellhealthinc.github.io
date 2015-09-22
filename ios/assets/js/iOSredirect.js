@@ -31,26 +31,29 @@ $(function() {
     var varFAID = getURLParameter('faid');
     var	varFAIDP = "faid=" + varFAID;
     var varTF = getURLParameter('tf');
+    var varTFP = "tf=" + varTF;
 
     var varLocationMobile =
-        "https://wellhealth.typeform.com/to/" + varTF + "?" 
+        "https://wellapp.com/form/?" +
         + varCFNP 
         + "&" + varCLNP 
         + "&" + varPIDP 
         + "&" + varCIDP 
         + "&" + varPNP 
         + "&" + varFAIDP 
+        + "&" + varTFP
         + "&os=0"
         ; 
     
     var varLocationWeb =
-        "https://wellhealth.typeform.com/to/" + varTF + "?" 
+        "https://wellapp.com/form/?" +
         + varCFNP 
         + "&" + varCLNP 
         + "&" + varPIDP 
         + "&" + varCIDP 
         + "&" + varPNP 
         + "&" + varFAIDP 
+        + "&" + varTFP
         + "&os=0"
         ;
 
