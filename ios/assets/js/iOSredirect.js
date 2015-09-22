@@ -34,7 +34,7 @@ $(function() {
     var varTFP = "tf=" + varTF;
 
     var varLocationMobile =
-        "https://wellapp.com/form/" +
+        "https://wellapp.com/form/?" +
         + varCFNP 
         + "&" + varCLNP 
         + "&" + varPIDP 
@@ -46,7 +46,7 @@ $(function() {
         ; 
     
     var varLocationWeb =
-        "https://wellapp.com/form/" +
+        "https://wellapp.com/form/?" +
         + varCFNP 
         + "&" + varCLNP 
         + "&" + varPIDP 
