@@ -82,8 +82,8 @@ $(function() {
                     url: 'https://api.parse.com/1/functions/inviteClient',
                     type: 'POST',
                     headers: {
-                        'X-Parse-Application-Id': 'MFv9KnsKigQT3xCzojePIduQmeA9xqfMscmPw3sj',
-                        'X-Parse-REST-API-Key': 'j8ruKWTtZlheswMTmG7RpIcyp2J3becNifjDTLZ4'
+                        'X-Parse-Application-Id': 'J6ysfOx4FV45BbTarg25oXSlJJZG9fs9Kzjul6wM',
+                        'X-Parse-REST-API-Key': 'YrUKfK64SBchpZ0WytA3bl3fMYRrc0Xizt4qDcaL'
                     },
                     data: {
                         //providerInput: {id: 'skmbKn8I1n'},
